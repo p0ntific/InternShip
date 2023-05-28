@@ -4,6 +4,7 @@ import registrationActionCreator from "./actionCreators/registrationActionCreato
 import myInfoActionCreator from "./actionCreators/myInfoActionCreator";
 import cardActionCreator from "./actionCreators/cardActionCreator";
 import feedbackActionCreator from "./actionCreators/feedbackActionCreator";
+import changeRatingActionCreator from "./actionCreators/changeRatingActionCreator";
 
 function mapDispatchToProps(component) {
     switch (component) {
@@ -39,12 +40,26 @@ function mapDispatchToProps(component) {
                     }
                 };
             };
-            case "feedback":
+            case "feedback_intern":
             return function (dispatch) {
                 return {
-                    submitFeedback: (value) => {
-                        dispatch(feedbackActionCreator(value))
-                    }
+                    submitFeedback: (values) => {
+                        dispatch(feedbackActionCreator({...values, person: 'intern'}))
+                    },
+                    changeRating: (value) => {
+                        dispatch(changeRatingActionCreator({rating:value, person: 'intern'}))
+                    },
+                };
+            };
+        case "feedback_mentor":
+            return function (dispatch) {
+                return {
+                    submitFeedback: (values) => {
+                        dispatch(feedbackActionCreator({...values, person: 'mentor'}))
+                    },
+                    changeRating: (value) => {
+                        dispatch(changeRatingActionCreator({rating:value, person: 'mentor'}))
+                    },
                 };
             };
         default:

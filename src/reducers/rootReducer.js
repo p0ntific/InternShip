@@ -5,6 +5,7 @@ import myInfoReducer from "./myInfoReducer";
 import cardReducer from "./cardReducer";
 import taskReducer from "./taskReducer";
 import feedbackReducer from "./feedbackReducer";
+import internInfoReducer from "./internInfoReducer";
 
 
 const rootReducer = combineReducers({
@@ -14,6 +15,7 @@ const rootReducer = combineReducers({
         cards:cardReducer,
         tasks:taskReducer,
         feedback:feedbackReducer,
+        internInfo:internInfoReducer
 })
 
 export default rootReducer;

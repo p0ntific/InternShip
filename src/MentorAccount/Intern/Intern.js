@@ -1,39 +1,10 @@
 import style from './Intern.module.scss'
 import {connect} from "react-redux";
 import Card from "../../Card/Card";
-import intern_photo from '../../images/intern.jpg'
+import mapStateToProps from "../../mapStateToProps";
 
 const Intern = (props) => {
-        let intern = {
-            name: 'Никита Марсельев Ростиславович',
-            age: '18',
-            description: 'Трудолюбивый, общительный и дружелюбный студент третьего курса ИТМО',
-            resume: 'Равным образом новая модель организационной деятельности играет важную роль ' +
-                'в формировании систем массового участия. Равным образом реализация намеченных плановых ' +
-                'заданий требуют от нас анализа новых предложений. Таким образом укрепление и развитие ' +
-                'структуры играет важную роль в формировании существенных финансовых и административных условий.' +
-                ' Задача организации, в особенности же дальнейшее развитие различных форм деятельности требуют ' +
-                'от нас анализа системы обучения кадров, соответствует насущным потребностям.',
-            tests: [
-                {
-                    name: 'личное собеседование',
-                    comment: 'положительное впечатление, приятный человек',
-                    score: 78
-                },
-                {
-                    name: 'онлайн СТЕПИК',
-                    comment: null,
-                    score: 80
-                },
-
-            ],
-            status: 'На рассмотрении',
-            contacts: [
-                ['email', 'somemail@gmail.com'],
-                ['phone', '89992223311'],
-                ['telegram', '@abobus']
-            ],
-        }
+        let intern = props.internInfo;
 
         let links = intern.contacts.map(el => (
             <li className={style.link_item}>{el[0]}:<a className={style.link} href={el[1]}>{el[1]}</a></li>
@@ -43,7 +14,7 @@ const Intern = (props) => {
         return (
             <div className={style.container_wrapper}>
                 <div className={style.container}>
-                    <img className={style.img} src={intern_photo} alt=""/>
+                    <img className={style.img} src={intern.img} alt=""/>
                     <h2 className={style.heading}>{intern.name}</h2>
                     <div className={style.info}>
                         <div className={style.block_left}>
@@ -66,5 +37,5 @@ const Intern = (props) => {
     }
 ;
 
-//const MyInfo_connect = connect(mapStateToProps, mapDispatchToProps)(MyInfo);
-export default Intern;
+const Intern_connect = connect(mapStateToProps('internInfo'))(Intern);
+export default Intern_connect;

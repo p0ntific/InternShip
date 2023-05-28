@@ -75,7 +75,7 @@ function mapStateToProps(component) {
                 };
             }
         }
-        case 'feedback':{
+        case 'feedback_intern':{
             return function (state) {
                 return {
                     firstName:state.feedback.mentor.firstName,
@@ -83,12 +83,33 @@ function mapStateToProps(component) {
                     info:state.feedback.mentor.info,
                     rating:state.feedback.mentor.rating,
                     img:state.feedback.mentor.img,
-                    comment_text:state.feedback.mentor.comment_text,
-                    comment_rating:state.feedback.mentor.comment_rating,
+                    comment_text:state.feedback.comment_intern.comment_text,
+                    comment_rating:state.feedback.comment_intern.comment_rating,
                 };
             }
         }
-         default: return null;
+        case 'feedback_mentor':{
+            return function (state) {
+                return {
+                    firstName:state.feedback.intern.firstName,
+                    lastName:state.feedback.intern.lastName,
+                    info:state.feedback.intern.info,
+                    rating:state.feedback.intern.rating,
+                    img:state.feedback.intern.img,
+                    comment_text:state.feedback.comment_mentor.comment_text,
+                    comment_rating:state.feedback.comment_mentor.comment_rating,
+                };
+            }
+        }
+        case 'internInfo':{
+            return function (state) {
+                return {
+                    internInfo: {...state.internInfo}
+                };
+            }
+        }
+
+        default: return null;
      }
  }
 
