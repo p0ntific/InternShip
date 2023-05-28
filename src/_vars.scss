@@ -1,0 +1,14 @@
+$RED_COLOR:#5A378C;
+$ORANGE_COLOR:#F27B50;
+$BG_COLOR:#f2f2f2;
+$AD_COLOR:brown;
+$WHITE: #f2f2f2;
+$height: 5rem;
+$block_width:60rem;
+$GRADIENT:linear-gradient(to bottom right,$ORANGE_COLOR,$RED_COLOR);
+
+@mixin container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

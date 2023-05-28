@@ -1,0 +1,14 @@
+@import "../vars";
+.block{
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 7rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+.block_wrapper{
+  min-height: 101vh;
+  background:linear-gradient(to bottom ,#172026,#04BF9D);
+}

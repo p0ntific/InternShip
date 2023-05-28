@@ -1,0 +1,35 @@
+@import '../../vars';
+
+.offers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.heading{
+  letter-spacing: 2px;
+  margin: 0;
+  color:$WHITE;
+  padding: 3rem 3rem 0 3rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 3rem;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.card_wrapper{
+  max-width: 20rem;
+  max-height: 30rem;
+}

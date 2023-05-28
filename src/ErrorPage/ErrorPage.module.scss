@@ -1,0 +1,32 @@
+@import '../vars';
+
+.container {
+  margin-top: 10%;
+  @include container;
+  flex-direction: column;
+  h1{
+    font-size: 4em;
+    padding: 0.3em ;
+    margin: 0;
+  }
+  a {
+    color: $WHITE;
+    text-decoration: none;
+    padding: 0.6rem 3rem;
+  }
+  button{
+    border-radius: 0.6rem;
+    margin-top: 2.5em;
+    padding: 0;
+    position: relative;
+    display: flex;
+  }
+}
+
+.button_wrapper{
+  width: 15rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

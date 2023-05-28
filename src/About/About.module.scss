@@ -1,0 +1,53 @@
+@import "../vars";
+.about{
+  min-height: 101vh;
+  background: $GRADIENT;
+}
+
+.block_wrapper{
+  z-index: -123;
+  transform: translateY($height);
+  padding-top: 5rem;
+}
+
+.block{
+  max-width: $block_width;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 5rem;
+  border-radius: 2rem;
+  padding: 2rem 1rem 2rem 4rem;
+}
+
+.heading{
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+}
+
+.text{
+  max-width: 85%;
+  line-height: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.main_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_img img{
+  height: 26rem;
+  width: 26rem;
+  border-radius: 1.5rem;
+}
+
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}

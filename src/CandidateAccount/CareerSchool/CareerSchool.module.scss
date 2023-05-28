@@ -1,0 +1,70 @@
+@import '../../vars';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.block {
+  display: flex;
+  background: $WHITE;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 8rem;
+  padding: 4rem;
+  border-radius: 1rem;
+  gap: 1.2rem;
+}
+
+.heading {
+  margin: 0;
+  padding: 0.4rem 0;
+}
+
+.heading_little {
+  margin-bottom: 0.65rem;
+  margin-top: 0.65rem;
+  color: #000;
+  font-size: 1.4rem;
+  letter-spacing: 0.5rem;
+}
+
+.text {
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.link {
+  color: #222222;
+  font-size: 1.3rem;
+}
+
+.button {
+  padding: 0.6rem 0.5rem;
+  min-width: 18rem !important;
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+  }
+
+  svg {
+    width: 0.9rem;
+    color: $RED_COLOR;
+  }
+}
+
+.heading_block{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

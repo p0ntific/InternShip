@@ -1,0 +1,90 @@
+@import '../../vars';
+
+.container_wrapper {
+  min-height: 101vh;
+  width: 1020px;
+}
+
+.container {
+  display: flex;
+  justify-content: start;
+  padding: 4rem 3rem;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  margin: 2rem auto 0 auto;
+  background: $WHITE;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  button {
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    color:$WHITE;
+    background: $RED_COLOR;
+    &:hover{
+      background:#622773;
+    }
+    a {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}
+
+.heading {
+  font-size: 2.1rem;
+  margin: 0;
+  display: flex;
+}
+
+.block {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: end;
+
+}
+
+.block_left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  justify-content: center;
+  align-items: start;
+  div{
+    max-width: 96%;
+  }
+}
+
+.block_right {
+  width: 45%;
+  gap: 0.5rem;
+  height: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+}
+
+.avatar_img{
+  max-width: 12rem;
+  border-radius: 0.8rem;
+  height: auto;
+}
+
+input {
+  font-size: 1rem !important;
+}
+
+div:after {
+  border-color: #000000 !important;
+}
+
+label {
+  font-size: 1.1rem !important;
+}
+
+.submit{
+  color:$WHITE !important;
+}

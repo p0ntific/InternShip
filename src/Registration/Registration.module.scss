@@ -1,0 +1,41 @@
+@import '../vars';
+
+.registration{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 620px;
+  margin:0 auto 0 auto ;
+  flex-direction: column;
+  button{
+    padding:0.6rem 2rem;
+    min-width: 20rem;
+    span{
+    }
+    margin-top: 3em;
+  }
+  button, input, label{
+    font-size: 1.4rem;
+  }
+}
+
+.button_wrapper{
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items:start;
+  justify-content: start;
+
+  a{
+    text-decoration: none;
+  }
+}
+
+.form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

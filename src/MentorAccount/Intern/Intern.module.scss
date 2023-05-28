@@ -1,0 +1,97 @@
+@import '../../vars';
+
+.container_wrapper{
+  padding-top:4rem;
+  background: #fff;
+  min-height: 100vh;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+  min-width: 60rem;
+  font-family:'Open Sans', sans-serif;
+  padding-bottom: 4rem;
+}
+
+.img{
+  max-width: 30rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.heading{
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0 0 0 ;
+}
+
+.info{
+  max-width: 35rem;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.block_left{
+  max-width: 50%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+}
+.block_right{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.age{
+  margin: 0;
+  padding-bottom: 0.5rem;
+  width: 100%;
+}
+.contacts{
+  margin: 0;
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+
+.links{
+  margin: 0;
+  padding: 0;
+}
+
+.link_item{
+  list-style: none;
+}
+
+.link{
+  text-decoration: none;
+  padding-left: 0.5rem;
+  color:#222;
+  &:hover{
+    color:$RED_COLOR;
+  }
+}
+
+.description{
+  margin: 0;
+}
+
+.resume{
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  max-width: 36rem;
+  margin:0;
+}
+
+.heading_resume{
+  font-size: 1.5rem;
+  letter-spacing:0.7rem;
+  margin: 2rem 0 0 0 ;
+}

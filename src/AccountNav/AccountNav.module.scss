@@ -1,0 +1,50 @@
+@import "../vars";
+$transition: all 50ms ease-in-out;
+.nav {
+  margin-top: $height;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#f9f9f9;
+  position: fixed;
+  box-shadow: 0 0 10px rgba(0,0,0,.12);
+  width: 100vw;
+  z-index: 1234124;
+  overflow: hidden;
+}
+
+.nav_list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.accountLink a{
+  letter-spacing: 1px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color:#222;
+  text-decoration: none;
+  transition: $transition;
+  position: relative;
+  &:before{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: $RED_COLOR;
+    position: absolute;
+    bottom: -0.2rem;
+    left: 0;
+    transition:all 100ms ease-in;
+  }
+}
+.accountLink a:hover{
+  color:$RED_COLOR !important;
+  &:before{
+    width: 100%;
+  }
+}

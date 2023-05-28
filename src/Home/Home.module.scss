@@ -1,0 +1,15 @@
+@import '../vars';
+.home{
+
+}
+.block_wrapper{
+  transform: translateY($height);
+  background: $GRADIENT;
+}
+
+.block{
+  min-height: 101vh;
+  margin: 0 auto;
+  max-width: $block_width;
+  padding-top: 6rem;
+}

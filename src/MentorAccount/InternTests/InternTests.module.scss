@@ -1,0 +1,40 @@
+@import '../../vars';
+
+.tests{
+  padding-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.test{
+  min-width: 30rem;
+  padding: 3rem 2rem;
+  background: $WHITE;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading{
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+}
+.comment{
+  text-align: center;
+ max-width: 23rem;
+}
+.heading_little{
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.heading_score{
+  font-size: 1.3rem;
+  font-weight: 600;
+}

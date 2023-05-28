@@ -1,0 +1,88 @@
+@import '../vars';
+
+$card_width: 100%;
+$border_radius: 0.5rem;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: $border_radius;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background: $WHITE;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.heading {
+  margin: 0;
+}
+
+.heading_little {
+  margin: 0;
+  text-align: center;
+}
+
+.info_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 17rem;
+}
+
+.block {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.text {
+  padding: 0;
+  text-align: center;
+}
+
+.img {
+  max-width: $card_width;
+  border-top-left-radius: $border_radius;
+  border-top-right-radius: $border_radius;
+}
+.rating{
+
+}
+button {
+  border-radius: 0.5rem !important;
+  max-width: 17rem;
+  color:rgba(0,200,0,0.8) !important;
+  span {
+    font-size: 0.9rem !important;
+  }
+
+}
+
+.accepted {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: forestgreen;
+}
+
+.button_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0 1rem 0 1rem;
+  gap: 0.5rem;
+  svg{
+    margin-left:0.5rem;
+    width: 1rem !important;
+  }
+}
+
+.cancel{
+  color:rgba(200,0,0,0.8) !important;
+}

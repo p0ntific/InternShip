@@ -1,0 +1,15 @@
+@import "../vars";
+.block{
+  transform: translateY(9rem);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 120vh;
+  background:linear-gradient(to bottom ,#172026,#04BF9D);
+}
+
+.block_wrapper{
+  min-height: 120vh;
+
+}

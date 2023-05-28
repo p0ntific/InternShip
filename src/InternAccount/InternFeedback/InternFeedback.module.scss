@@ -1,0 +1,110 @@
+@import '../../vars';
+
+.container_wrapper {
+  min-height: 101vh;
+  width: 800px;
+}
+
+.container {
+  display: flex;
+  justify-content: start;
+  padding: 3rem 2rem 2rem 2rem;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  margin: 2rem auto 0 auto;
+  background: $WHITE;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  button {
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    color:$WHITE;
+    background: $RED_COLOR;
+    &:hover{
+      background:#622773;
+    }
+    a {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}
+
+.heading {
+  font-size: 2.1rem;
+  margin: 0 0 3rem 0;
+  width: 100% !important;
+  text-align: center ;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: space-between;
+  padding: 0 4rem;
+}
+
+.block_top{
+  display: flex;
+  justify-content: center;
+  gap:3rem;
+}
+
+.block_bottom{
+  display: flex;
+  gap:3rem;
+  justify-content: space-between;
+}
+
+.comment{
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.avatar_img{
+  width: 14rem;
+  height: 14rem;
+  border-radius: 0.8rem;
+  object-fit: cover;
+}
+
+.heading_little{
+  margin: 0;
+}
+input {
+  font-size: 1rem !important;
+}
+
+div:after {
+  border-color: #000000 !important;
+}
+
+label {
+  font-size: 1.1rem !important;
+}
+
+.submit{
+  margin-top: 2rem !important;
+  color:$WHITE !important;
+}
+
+.sticker{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sticker_img{
+  max-width: 15rem;
+}
+
+.comment{
+  svg{
+    color:$RED_COLOR !important;
+  }
+}
